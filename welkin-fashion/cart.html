@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart — Welkin Fashion</title>
+  <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/theme-toggle.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container flex-space">
+      <h2 class="logo">Welkin Fashion</h2>
+      <nav class="nav-list">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
+        <a href="regular-page.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn login-btn">Login</button>
+        <a href="cart.html" class="btn cart-btn active">🛒 Cart (<span id="cart-count">0</span>)</a>
+        <button class="mobile-menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CART SECTION -->
+  <section class="cart-section">
+    <div class="container">
+      <h2>Your Shopping Cart 🛒</h2>
+      <div id="cart-items"></div>
+      <!-- <div class="total-section">
+        <h3>Total: ₹<span id="cart-total">0.00</span></h3>
+        <button id="clear-cart" class="btn outline">Clear Cart</button>
+      </div> -->
+
+
+
+      <div class="total-section">
+  <h3>Total: ₹<span id="cart-total">0.00</span></h3>
+  <button id="clear-cart" class="btn outline">Clear Cart</button>
+  <a href="chekout.html" class="btn">Proceed to Checkout</a> <!-- ← Add this -->
+
+
+  <!-- <a href="#" id="checkoutBtn" class="btn">Proceed to Checkout</a>
+<script>
+  document.getElementById('checkoutBtn').addEventListener('click', function () {
+    window.location.href = 'checkout.html'; // JS redirection
+  });
+</script> -->
+
+</div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <h5>Welkin Fashion</h5>
+      <p>Crafted with minimalism & elegance ✨</p>
+      <div class="footer-links"><a href="index.html">Home</a> | <a href="shop.html">Shop</a> | <a href="blog.html">Blog</a> | <a href="contact.html">Contact</a></div>
+      <!-- <div class="social-icons"><a href="#">F</a><a href="#">I</a><a href="#">T</a></div> -->
+
+      <div class="social-icons">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-twitter"></a>
+</div>
+
+      <p class="copyright">© 2025 Welkin Fashion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/cart.js"></script>
+<script src="js/theme-toggle.js"></script>
+</body>
+</html>

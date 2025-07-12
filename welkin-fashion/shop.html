@@ -1,0 +1,106 @@
+<!-- FILE: shop.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Welkin Fashion</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container">
+    <h2 class="logo">Welkin Fashion</h2>
+    <nav class="nav-list">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="blog.html">Blog</a>
+      <a href="regular-page.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <!-- <button class="btn login-btn">Login</button> -->
+
+      <a href="login.html" class="btn login-btn">Login</a>
+      <!-- <button class="btn cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button> -->
+        <a href="cart.html" class="btn cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a> 
+      <button class="mobile-menu-toggle">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="shop-section">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Explore Our Products</h2>
+      <p>Premium fashion essentials crafted with elegance</p>
+    </div>
+
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="card fade-in-up">
+        <img src="img/product-img/product-1.jpg" alt="Luxe Linen Dress" height="550" width="550">
+        <div class="card-body">
+          <h5>Luxe Linen Dress</h5>
+          <p>$79.99</p>
+          <button class="btn add-to-cart" data-id="p1" data-name="Luxe Linen Dress" data-price="79.99">Add to Cart</button>
+          <a href="single-product-details.html" class="btn outline small">View Details</a>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="card fade-in-up">
+        <img src="img/product-img/product-2.jpg" alt="Minimalist Jacket" height="550" width="550">
+        <div class="card-body">
+          <h5>Minimalist Jacket</h5>
+          <p>$129.00</p>
+          <button class="btn add-to-cart" data-id="p2" data-name="Minimalist Jacket" data-price="129.00">Add to Cart</button>
+          <a href="single-product-details.html" class="btn outline small">View Details</a>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="card fade-in-up">
+        <img src="img/product-img/product-3.jpg" alt="Essentials Tee"  height="550" width="550">
+        <div class="card-body">
+          <h5>Everyday Welkin Tee</h5>
+          <p>$39.50</p>
+          <button class="btn add-to-cart" data-id="p3" data-name="Essentials Tee" data-price="39.50">Add to Cart</button>
+          <a href="single-product-details.html" class="btn outline small">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <h5>Welkin Fashion</h5>
+    <p>Crafted with minimalism & elegance ✨</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a> |
+      <a href="shop.html">Shop</a> |
+      <a href="blog.html">Blog</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </div>
+    <!-- <div class="social-icons">
+      <a href="#">F</a> <a href="#">I</a> <a href="#">T</a>
+    </div> -->
+    <div class="social-icons">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-twitter"></a>
+</div>
+
+    <p class="copyright">© 2025 Welkin Fashion</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>

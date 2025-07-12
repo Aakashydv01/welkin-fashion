@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — Welkin Fashion</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Page-specific styles */
+    body.login-page {
+      background: linear-gradient(135deg, var(--bg-alt), var(--bg-light));
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .login-card {
+      background: var(--bg-light);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      animation: fadeInUp 0.8s ease;
+    }
+    .login-card h2 {
+      margin-bottom: 1.5rem;
+      color: var(--text-dark);
+      text-align: center;
+    }
+    .login-card .form-group {
+      margin-bottom: 1.2rem;
+    }
+    .login-card label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .login-card input {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    .login-card input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 8px rgba(40,167,69,0.2);
+      outline: none;
+    }
+    .login-card button {
+      width: 100%;
+      margin-top: 1rem;
+    }
+    .login-card .extra {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+    .login-card .extra a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .login-card .extra a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="login-page">
+  <div class="login-card">
+    <h2>Welcome Back</h2>
+    <form action="index.html" method="get">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="●●●●●●" required />
+      </div>
+      <button type="submit" class="btn">Log In</button>
+    </form>
+    <div class="extra">
+      <p><a href="index.html">← Return to Home</a></p>
+      <p>Don't have an account? <a href="#">Register</a></p>
+    </div>
+  </div>
+
+  <script>
+    // Optional client-side enhancement:
+    document.querySelector('form').addEventListener('submit', e => {
+      e.preventDefault();
+      // Future: Add validation or API call here
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
